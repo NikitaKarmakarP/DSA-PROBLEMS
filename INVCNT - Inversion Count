@@ -1,1 +1,97 @@
+**QUESTION**
+Let A[0 ... n - 1] be an array of n distinct positive integers. If i < j and A[i] > A[j] then the pair (i, j) is called an inversion of A. Given n and an array A your task is to find the number of inversions of A.
+
+Input
+The first line contains t, the number of testcases followed by a blank space. Each of the t tests start with a number n (n ≤ 200000). Then n + 1 lines follow. In the ith line a number A[i - 1] is given (A[i - 1] ≤ 107). The (n + 1)th line is a blank space.
+
+Output
+For every test output one line giving the number of inversions of A.
+
+Example
+Input:
+2
+
+3
+3
+1
+2
+
+5
+2
+3
+8
+6
+1
+
+
+Output:
+2
+5
+
+**ANSWER**
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+long long merge_and_count(vector<int>& arr, int left, int mid, int right) {
+    vector<int> leftSub(arr.begin() + left, arr.begin() + mid + 1);
+    vector<int> rightSub(arr.begin() + mid + 1, arr.begin() + right + 1);
+
+    int i = 0, j = 0, k = left;
+    long long inv_count = 0;
+
+    while (i < leftSub.size() && j < rightSub.size()) {
+        if (leftSub[i] <= rightSub[j]) {
+            arr[k++] = leftSub[i++];
+        } else {
+            arr[k++] = rightSub[j++];
+            inv_count += leftSub.size() - i;
+        }
+    }
+
+    while (i < leftSub.size()) {
+        arr[k++] = leftSub[i++];
+    }
+    while (j < rightSub.size()) {
+        arr[k++] = rightSub[j++];
+    }
+
+    return inv_count;
+}
+
+long long merge_sort_and_count(vector<int>& arr, int left, int right) {
+    long long inv_count = 0;
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        inv_count += merge_sort_and_count(arr, left, mid);
+        inv_count += merge_sort_and_count(arr, mid + 1, right);
+
+        inv_count += merge_and_count(arr, left, mid, right);
+    }
+    return inv_count;
+}
+
+int main() {
+    int t;
+    cin >> t;
+    cin.ignore(); // to consume the blank space after t
+
+    while (t--) {
+        string blank;
+        getline(cin, blank); // consume blank line before each test case
+        int n;
+        cin >> n;
+        vector<int> arr(n);
+        for (int i = 0; i < n; ++i) {
+            cin >> arr[i];
+        }
+        cin.ignore(); // consume blank space at end of each test case
+
+        cout << merge_sort_and_count(arr, 0, n - 1) << endl;
+    }
+    return 0;
+}
 
