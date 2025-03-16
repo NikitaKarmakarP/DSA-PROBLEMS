@@ -7,10 +7,15 @@ This repository contains solutions to a variety of Data Structures and Algorithm
 Each folder contains problems categorized by the platform they were sourced from:
 
 ├── Aggressive Cows (GeeksforGeeks) 
+
 ├── Grid Unique Paths (Leetcode) 
+
 ├── INVCNT - Inversion Count (Sphere Online Judge) 
+
 ├── K-Special Cells (Hackerearth) 
+
 ├── N-Queens (Leetcode) 
+
 ├── README.md
 
 
