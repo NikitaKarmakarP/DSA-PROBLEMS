@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+bool canBeSharpened(vector<int>& a) {
+    int n = a.size();
+    for (int i = 0; i < n; i++) {
+        int minRequired = min(i, n - 1 - i); // Minimum value required to maintain the peak
+        if (a[i] < minRequired) {
+            return false; // If any element is too small, it's impossible to sharpen
+        }
+    }
+    return true;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+        
+        cout << (canBeSharpened(a) ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
