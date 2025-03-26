@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+bool is_ebne(const string &num) {
+    int sum_digits = 0;
+    for (char c : num) sum_digits += (c - '0');
+    return (sum_digits % 2 == 0) && ((num.back() - '0') % 2 == 1);
+}
+
+void solve() {
+    int n;
+    string s;
+    cin >> n >> s;
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            string candidate = {s[i], s[j]};
+            if (is_ebne(candidate)) {
+                cout << candidate << "\n";
+                return;
+            }
+        }
+    }
+    cout << "-1\n";
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
