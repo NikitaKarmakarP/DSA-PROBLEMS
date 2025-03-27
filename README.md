@@ -6,17 +6,26 @@ This repository contains solutions to a variety of Data Structures and Algorithm
 
 Each folder contains problems categorized by the platform they were sourced from:
 
-├── Aggressive Cows (GeeksforGeeks) 
-
-├── Grid Unique Paths (Leetcode) 
-
-├── INVCNT - Inversion Count (Sphere Online Judge) 
-
-├── K-Special Cells (Hackerearth) 
-
-├── N-Queens (Leetcode) 
-
-├── README.md
+📂 Competitive-Programming-Solutions/
+│── 📜 README.md
+│── 📂 Codeforces/
+│   ├── 📜 A — Frog 1.cpp
+│   ├── 📜 B — Frog 2.cpp
+│   ├── 📜 C — Vacation (Maximum Happiness).cpp
+│   ├── 📜 Array Sharpening.cpp
+│   ├── 📜 Even But Not Even.cpp
+│   ├── 📜 Product of Three Numbers.cpp
+│── 📂 Leetcode/
+│   ├── 📜 Grid Unique Paths.cpp
+│   ├── 📜 N-Queens.cpp
+│   ├── 📜 Reverse Pairs.cpp
+│── 📂 GeeksforGeeks/
+│   ├── 📜 Aggressive Cows.cpp
+│── 📂 Sphere-Online-Judge/
+│   ├── 📜 INVCNT - Inversion Count.cpp
+│── 📂 Hackerearth/
+│   ├── 📜 K-Special Cells.cpp
+│── 📜 .gitignore
 
 
 ## 📝 Problems Included
