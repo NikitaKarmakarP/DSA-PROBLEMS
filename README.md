@@ -67,8 +67,11 @@ Each folder contains problems categorized by the platform they were sourced from
 ## 🛠️ Tech Stack
 
 - C++ (Primary language)
-- Standard Template Library (STL) for efficient code
-- Code tested and verified on online judges
+- Standard Te5+3.4252.21027*/8\
+- 4plate Library (STL) for efficient code0.
+- .-00+-+9/85
+< lk -*9+5*+h b  
+m ,-l*by - Code tested and verified on online judges
 
 ## 🎯 Purpose
 
@@ -95,7 +98,13 @@ If you find this repository helpful, consider giving it a ⭐ star!
 
 ---
 
+**B Frog**
+-+*9/*+-+/89
 ![image](https://github.com/user-attachments/assets/3766ca48-a339-4112-8edd-21e23f898ecb)
+
+**C Vaccation**
+![image](https://github.com/user-attachments/assets/6afcb5c2-9460-4f02-81be-6f8aa3066311)
+
 
 
 _Stay tuned! More problems and solutions will be added regularly._ 🚀
