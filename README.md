@@ -99,7 +99,6 @@ If you find this repository helpful, consider giving it a ⭐ star!
 ---
 
 **B Frog**
--+*9/*+-+/89
 ![image](https://github.com/user-attachments/assets/3766ca48-a339-4112-8edd-21e23f898ecb)
 
 **C Vaccation**
