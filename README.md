@@ -95,4 +95,7 @@ If you find this repository helpful, consider giving it a ⭐ star!
 
 ---
 
+![image](https://github.com/user-attachments/assets/3766ca48-a339-4112-8edd-21e23f898ecb)
+
+
 _Stay tuned! More problems and solutions will be added regularly._ 🚀
