@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int N, W;
+    cin >> N >> W;
+    vector<int> weight(N), value(N);
+    
+    for (int i = 0; i < N; i++) {
+        cin >> weight[i] >> value[i];
+    }
+    
+    vector<vector<long long>> dp(N + 1, vector<long long>(W + 1, 0));
+    
+    for (int i = 1; i <= N; i++) {
+        for (int w = 0; w <= W; w++) {
+            if (w >= weight[i - 1]) {
+                dp[i][w] = max(dp[i - 1][w], dp[i - 1][w - weight[i - 1]] + value[i - 1]);
+            } else {
+                dp[i][w] = dp[i - 1][w];
+            }
+        }
+    }
+    
+    cout << dp[N][W] << endl;
+    return 0;
+}
