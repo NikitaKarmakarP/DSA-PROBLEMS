@@ -99,12 +99,15 @@ If you find this repository helpful, consider giving it a ⭐ star!
 ---
 
 **B Frog**
+
 ![image](https://github.com/user-attachments/assets/3766ca48-a339-4112-8edd-21e23f898ecb)
 
 **C Vaccation**
+
 ![image](https://github.com/user-attachments/assets/6afcb5c2-9460-4f02-81be-6f8aa3066311)
 
 **I-Coins**
+
 ![image](https://github.com/user-attachments/assets/dc00eb81-d272-4f65-b127-3d09917cfeaa)
 
 
