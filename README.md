@@ -110,5 +110,9 @@ If you find this repository helpful, consider giving it a ⭐ star!
 
 ![image](https://github.com/user-attachments/assets/dc00eb81-d272-4f65-b127-3d09917cfeaa)
 
+**Magic Numbers**
+
+![image](https://github.com/user-attachments/assets/8f5ea291-91aa-4cdf-81b6-bf18b2bd7c0f)
+
 
 _Stay tuned! More problems and solutions will be added regularly._ 🚀
