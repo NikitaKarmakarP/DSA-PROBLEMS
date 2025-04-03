@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+void solve() {
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    long long total_tastiness = 0;
+    
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+        total_tastiness += a[i];
+    }
+    
+    long long max_segment_sum = LLONG_MIN, prefix_sum = 0;
+    
+    // Check all prefix sums except the full array
+    for (int i = 0; i < n - 1; i++) {
+        prefix_sum += a[i];
+        max_segment_sum = max(max_segment_sum, prefix_sum);
+    }
+    
+    prefix_sum = 0;
+    // Check all suffix sums except the full array
+    for (int i = n - 1; i > 0; i--) {
+        prefix_sum += a[i];
+        max_segment_sum = max(max_segment_sum, prefix_sum);
+    }
+    
+    cout << (total_tastiness > max_segment_sum ? "YES" : "NO") << "\n";
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
+}
