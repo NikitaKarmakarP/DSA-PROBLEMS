@@ -114,5 +114,10 @@ If you find this repository helpful, consider giving it a ⭐ star!
 
 ![image](https://github.com/user-attachments/assets/8f5ea291-91aa-4cdf-81b6-bf18b2bd7c0f)
 
+**The Shino and Pairs**
+
+![image](https://github.com/user-attachments/assets/08ab4d33-07a8-42c5-af97-37c304bcd84d)
+
+
 
 _Stay tuned! More problems and solutions will be added regularly._ 🚀
