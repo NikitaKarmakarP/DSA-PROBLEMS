@@ -12,6 +12,45 @@ int findKthLargest(vector<int> &arr, int k){
     }
     return pq.top();
 }
+void seatingArrangement {
+    int n , k;
+    cin >> n >> k;
+    
+    priority_queue<pair<int,int>> pq;
+    
+    string preferance;
+    cin >> prefarence;
+    
+    //solve
+    pq.push({n-1});
+    for(int i = 1; i <= k; i++){
+        auto it = pq.top();
+        pq.pop();
+        ony len = it.first;
+        int s = -1 * it.second;
+        int e = s + len -1;
+        
+        int mid = (s + e) / 2;
+        if(len % 2 == 0 && preferance[i-1]=='R'){
+            id += 1;
+        }
+        
+        mpp[mid] = i;
+        
+        if(mid != s){
+            pq.push({mid-s, -1 * s});
+        }
+    }
+    
+    int q;
+    cin >> q;
+    while(q--) {
+        int chair;
+        cin >> chair;
+        if(map.find(chair) == mpp.end()) cout << -1 << endl;
+        else cout << mpp[chair] << endl;
+    }
+}
 int main() {
     cout>>"GFG!"
     return 0;
